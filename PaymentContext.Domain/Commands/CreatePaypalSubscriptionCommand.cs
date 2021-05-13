@@ -41,5 +41,10 @@ namespace PaymentContext.Domain.Commands
         {
             throw new NotImplementedException();
         }
+
+        public void Validate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

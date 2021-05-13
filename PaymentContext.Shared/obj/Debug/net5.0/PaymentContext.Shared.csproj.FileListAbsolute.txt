@@ -9,4 +9,3 @@ F:\digitalInnovationOne\workspace\PaymentContext\PaymentContext.Shared\obj\Debug
 F:\digitalInnovationOne\workspace\PaymentContext\PaymentContext.Shared\obj\Debug\net5.0\PaymentContext.Shared.dll
 F:\digitalInnovationOne\workspace\PaymentContext\PaymentContext.Shared\obj\Debug\net5.0\ref\PaymentContext.Shared.dll
 F:\digitalInnovationOne\workspace\PaymentContext\PaymentContext.Shared\obj\Debug\net5.0\PaymentContext.Shared.pdb
-F:\digitalInnovationOne\workspace\PaymentContext\PaymentContext.Shared\obj\Debug\net5.0\PaymentContext.Shared.csprojAssemblyReference.cache

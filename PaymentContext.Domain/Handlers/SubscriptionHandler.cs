@@ -41,7 +41,6 @@ namespace PaymentContext.Domain.Handlers
             if (_repository.DocumentExists(command.Document))
             {
                 AddNotifications(command);
-                return new CommandResult(false, "Este CPF ou CNPJ já está cadastrado na base.");
             }
             //Pode ser utilizado o AddNotifications
             AddNotifications(new Contract()
@@ -53,7 +52,6 @@ namespace PaymentContext.Domain.Handlers
             if (_repository.EmailExists(command.Email))
             {
                 AddNotifications(command);
-                return new CommandResult(false, "Não foi possível realizar seu cadastro");
             }
             //Gerar os VOs
             var name = new Name(command.FirstName, command.LastName);
@@ -72,6 +70,10 @@ namespace PaymentContext.Domain.Handlers
 
             //Agrupar as Validações
             AddNotifications(name, document, address, student, subscription, payment);
+
+            //Checar as notificações
+            if (Invalid)
+                return new CommandResult(false, "Não foi possível efetivar sua assinatura!");
 
             //Persistir as informações
             _repository.CreateSubscription(student);

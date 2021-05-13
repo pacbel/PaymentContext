@@ -24,17 +24,20 @@ namespace PaymentContext.Tests.Commands
         [TestMethod]
         public void SholdReturnErrorWhenNameIsInvalid()
         {
-            var command = new CreateBoletoSubscriptionCommand();
-            command.FirstName = _firstname;
+            var command = new CreateBoletoSubscriptionCommand
+            {
+                FirstName = _firstname
+            };
             command.Validate();
             Assert.AreEqual(true, command.Invalid);
         }
         [TestMethod]
         public void SholdReturnErrorWhenNameIsValid()
         {
-            var command = new CreateBoletoSubscriptionCommand();
-            command.FirstName = _firstname;
-            command.LastName = _lastname;
+            var command = new CreateBoletoSubscriptionCommand { 
+            FirstName = _firstname,
+            LastName = _lastname
+        };
             command.Validate();
             Assert.AreEqual(true, command.Valid);
         }
