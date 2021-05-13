@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "9e8rH9957hSkc5K3TOEh38ZxLjXMEzVDOv+6EO5lJoRsExAgFkIFJMat0RIkMGhQrm2Lmao+057pUuKgyT4/1g==",
+  "success": true,
+  "projectFilePath": "F:\\digitalInnovationOne\\workspace\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Carlos Pacheco\\.nuget\\packages\\flunt\\1.0.4\\flunt.1.0.4.nupkg.sha512",
+    "C:\\Users\\Carlos Pacheco\\.nuget\\packages\\flunt.br\\1.4.1\\flunt.br.1.4.1.nupkg.sha512"
+  ],
+  "logs": []
+}
